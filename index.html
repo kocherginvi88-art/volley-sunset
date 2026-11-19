@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#150c22">
+  <meta name="description" content="Три волейбольные темы для урока по созданию презентаций.">
+  <title>Волейбол на закате · Урок по презентациям</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; color: #fff8f3; background: #150c22; }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; min-width: 260px; }
+    .wrap { width: min(1176px, calc(100% - 88px)); margin-inline: auto; }
+    .masthead { background: #150c22; border-bottom: 1px solid #3e2b48; }
+    .masthead .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 60px; }
+    .label { font-size: 12px; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+    .masthead .label:first-child { color: #fff3f4; }
+    .masthead .label:last-child { color: #ffc38e; text-align: right; white-space: nowrap; }
+    .hero { position: relative; isolation: isolate; overflow: hidden; background: radial-gradient(ellipse at 80% 22%, #e86b56, #6b265e 48%, #21132e 80%); }
+    .hero-art { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 49%; }
+    .hero::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, #150c22 0%, #150c22ec 22%, #150c2266 53%, transparent 80%), linear-gradient(0deg, #150c22, transparent 38%); }
+    .hero-copy { padding-block: 83px 130px; min-height: 510px; display: flex; flex-direction: column; justify-content: center; }
+    .eyebrow { margin: 0 0 23px; color: #ffc38e; display: flex; align-items: center; gap: 12px; }
+    .eyebrow::before { content: ""; width: 24px; height: 2px; background: currentColor; }
+    h1 { margin: 0; font-size: clamp(58px, 8vw, 122px); line-height: .86; font-weight: 950; font-family: "Arial Black", system-ui, sans-serif; letter-spacing: -.075em; text-transform: uppercase; text-shadow: 0 4px 28px #180f29b0; }
+    h1 span { display: block; margin-top: 13px; color: #ff9ab8; font-size: .65em; font-style: italic; letter-spacing: -.055em; }
+    .intro { color: #f5e8f4; font-size: 18px; line-height: 1.5; max-width: 32ch; margin: 25px 0 0; }
+    .teams { position: relative; margin-top: -56px; padding-bottom: 38px; }
+    .teams h2 { margin: 0 0 14px; color: #fae9f7; }
+    .grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; }
+    .team { --accent:#8af4d6; --ink:#102a27; display: flex; flex-direction: column; min-width: 0; background:#21152c; border:1px solid #483251; border-top:3px solid var(--accent); padding:24px; border-radius:8px; }
+    .g2 { --accent:#ffd080; --ink:#342307; }
+    .g3 { --accent:#ffabc7; --ink:#39152c; }
+    .team-id { align-self: flex-start; margin:0 0 15px; color:var(--accent); font-size:13px; font-weight:900; letter-spacing:.08em; }
+    .team h3 { margin:0; font-size:clamp(22px,2.2vw,31px); font-weight:850; line-height:1.05; letter-spacing:-.035em; text-wrap:balance; }
+    .team p:not(.team-id) { margin:12px 0 22px; color:#d8c8dd; font-size:15px; line-height:1.45; }
+    .open { display:flex; justify-content:space-between; align-items:center; gap:8px; min-height:48px; margin-top:auto; padding:10px 13px; border-radius:4px; color:var(--ink); background:var(--accent); font-size:14px; font-weight:800; text-decoration:none; transition:filter .15s ease, transform .15s ease; }
+    .open:hover { filter:brightness(1.12); transform:translateY(-2px); }
+    .open:focus-visible { outline:3px solid white; outline-offset:4px; }
+    .arrow { font-size:21px; line-height:1; }
+    @media (max-width: 840px) {
+      .wrap { width:calc(100% - 48px); }
+      .hero-copy { min-height:440px; padding-block:66px 105px; }
+      .team { padding:17px; }
+      .grid { gap:10px; }
+    }
+    @media (max-width: 660px) {
+      .wrap { width:calc(100% - 36px); }
+      .masthead .wrap { min-height:50px; }
+      .masthead .label { font-size:10px; letter-spacing:.09em; }
+      .hero-copy { min-height:0; padding-block:53px 83px; }
+      .hero-art { object-position:64% center; }
+      .hero::after { background:linear-gradient(90deg,#150c22e8,#150c228f 68%,#150c2240),linear-gradient(0deg,#150c22,transparent 46%); }
+      h1 { font-size:clamp(34px,11vw,72px); }
+      .eyebrow { margin-bottom:19px; }
+      .intro { font-size:15px; max-width:31ch; margin-top:22px; }
+      .teams { margin-top:-39px; }
+      .grid { grid-template-columns:1fr; gap:12px; }
+      .team { padding:19px; }
+      .team h3 { font-size:24px; text-wrap:initial; }
+      .team p:not(.team-id) { margin-bottom:16px; }
+    }
+    @media (prefers-reduced-motion: reduce) { .open { transition:none; } .open:hover { transform:none; } }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <span class="label">Практикум по презентациям</span>
+      <span class="label">40 минут</span>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="title">
+      <img class="hero-art" src="court.webp" alt="" fetchpriority="high">
+      <div class="wrap hero-copy">
+        <p class="eyebrow label">Одна презентация на команду</p>
+        <h1 id="title">Волейбол <span>на закате</span></h1>
+        <p class="intro">Откройте шаблон своей группы. Начните с мема и объясните, что происходит на площадке.</p>
+      </div>
+    </section>
+    <section class="wrap teams" aria-labelledby="groups">
+      <h2 id="groups" class="label">Выберите свою группу</h2>
+      <div class="grid">
+        <article class="team">
+          <p class="team-id">Г1</p>
+          <h3>Приземлиться и не сломаться</h3>
+          <p>Как приземление связано с нагрузкой на колени.</p>
+          <a class="open" href="https://docs.google.com/presentation/d/14XcDQ83E3zwJVdLfJw2BEPh-Ldmzw3vLZfJbP-hJKR8/edit" aria-label="Открыть презентацию Г1" target="_blank" rel="noopener noreferrer">Открыть презентацию <span class="arrow" aria-hidden="true">↗</span></a>
+        </article>
+        <article class="team g2">
+          <p class="team-id">Г2</p>
+          <h3>Подача-невидимка</h3>
+          <p>Физика и математика непредсказуемого мяча.</p>
+          <a class="open" href="https://docs.google.com/presentation/d/1a5e7tn36RblJ4y8lT6VGl_V6vygmSz-7eqggjOudNFc/edit" aria-label="Открыть презентацию Г2" target="_blank" rel="noopener noreferrer">Открыть презентацию <span class="arrow" aria-hidden="true">↗</span></a>
+        </article>
+        <article class="team g3">
+          <p class="team-id">Г3</p>
+          <h3>Удар, который пробивает блок</h3>
+          <p>Откуда берётся сила атаки и как беречь плечо.</p>
+          <a class="open" href="https://docs.google.com/presentation/d/1ZiINtZLT3uEJgZ-S5MRVt_it7wPotGx54cSC4CMc2YE/edit" aria-label="Открыть презентацию Г3" target="_blank" rel="noopener noreferrer">Открыть презентацию <span class="arrow" aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
